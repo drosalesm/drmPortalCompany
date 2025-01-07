@@ -1,0 +1,35 @@
+---
+import {hero} from "@data";
+
+const {title,subtitle,imageUrl,btnText} =hero
+
+
+---
+<section class="relative bg-gray-900 text-white">
+    <div class="container mx-auto px-6 lg:px-12 py-12 flex flex-col-reverse lg:flex-row items-center lg:items-start">
+      <!-- Hero Content -->
+      <div class="lg:w-1/2">
+        <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+          Bienvenido a <span class="text-indigo-500">{title}</span>
+        </h1>
+        <p class="mt-4 text-lg lg:text-xl text-gray-300">
+          {subtitle}
+        </p>
+        <a
+          href="#services"
+          class="mt-6 inline-block px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold text-lg rounded-md shadow-lg transition"
+        >
+          {btnText}
+        </a>
+      </div>
+      <!-- Hero Image -->
+      <div class="lg:w-1/2 mt-8 lg:mt-0">
+        <img
+          src={imageUrl}
+          alt="Imagen de Hero"
+          class="w-full h-full object-cover rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </section>
+  
