@@ -1,11 +1,82 @@
 {
-    "hero": {
-      "title": "DRM Soluciones de Software",
-      "subtitle": "Transformamos tus ideas en soluciones digitales personalizadas. Tu lo imaginas, nosotros lo creamos.",
-      "ctaText": "Descubre más",
-      "ctaLink": "/#services",
-      "imageUrl":"images/banner.webp",
-      "btnText":"Contactanos"
+  "hero": {
+    "title": "DRM Soluciones de Software",
+    "subtitle": "Transformamos tus ideas en soluciones digitales personalizadas. Tu lo imaginas, nosotros lo creamos.",
+    "ctaText": "Descubre más",
+    "ctaLink": "/#services",
+    "imageUrl": "images/banner.webp",
+    "btnText": "Contactanos"
+  },
+  "services": [
+    {
+      "title": "Paginas web",
+      "description": "Creamos sitios web rápidos, seguros y totalmente optimizados para SEO.",
+      "imageUrl": ""
+    },
+    {
+      "title": "E-commerce",
+      "description": "Soluciones personalizadas de comercio electrónico para potenciar tu negocio.",
+      "imageUrl": ""
+    },
+    {
+      "title": "Servicios web",
+      "description": "Diseñamos y desarrollamos APIs escalables y seguras para conectar tus aplicaciones.",
+      "imageUrl": ""
+    },
+    {
+      "title": "Backend Services",
+      "description": "Arquitecturas backend robustas y optimizadas para un rendimiento superior.",
+      "imageUrl": ""
     }
+  ],
+  "servicetext": {
+    "name": "Servicios",
+    "subtitle": "Puedes ver nuestro trabajo a través de la experiencia de nuestros clientes."
+  },
+  "projects": {
+    "name": "Proyectos",
+    "subtitle": "Puedes ver nuestro trabajo a través de la experiencia de nuestros clientes.",
+    "list": [
+      {
+        "title": "Kelly Tax Pro",
+        "description": "Compañia de recoleccion de taxes EEUU",
+        "url": "https://kellytaxpro.com/",
+        "imageUrl": "images/logo.png"
+      }
+    ]
+  },
+  "technologies": [
+    {
+      "name": "",
+      "imageUrl": "images/python.png"
+    },
+    {
+      "name": "",
+      "imageUrl": "images/django.webp"
+    },
+    {
+      "name": "",
+      "imageUrl": "images/fastApi.png"
+    },
+    {
+      "name": "",
+      "imageUrl": "images/oracle.png"
+    },
+    {
+      "name": "",
+      "imageUrl": "images/postgres-logo.png"
+    },
+    {
+      "name": "",
+      "imageUrl": "images/react.png"
+    },
+    {
+      "name": "",
+      "imageUrl": "images/astro-logo.png"
+    }
+  ],"techDesc": {
+    "text": "Tecnologías",
+    "description": "En DRM Soluciones de Software utilizamos las mejores tecnologías para garantizar soluciones eficientes y modernas."
   }
   
+}

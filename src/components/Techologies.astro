@@ -1,0 +1,34 @@
+---
+
+import { technologies,techDesc } from '@data'; // Import your data.json
+
+const {text,description} =techDesc;
+---
+
+<section id="technologies" class="bg-gray-100 py-12">
+  <div class="container mx-auto px-6 lg:px-12">
+    <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800">{text}</h1>
+    <p class="text-center text-gray-600 mt-5 mb-12 text-2xl">
+      {description}
+    </p>   
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+      {technologies.map((tech) => (
+        <div 
+          class="group relative bg-gray-300 shadow-lg hover:shadow-xl rounded-lg overflow-hidden transition-all transform hover:scale-105 hover:-translate-y-2 duration-500"
+        >
+          <div class="p-6 text-center flex justify-center items-center h-full">
+            <img
+              src={`/${tech.imageUrl}`}
+              alt={tech.name}
+              class="mx-auto mb-4 transition-opacity group-hover:opacity-80 duration-500"
+              width="150"
+              height="150"
+            />
+            <p class="text-gray-800 font-medium">{tech.name}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

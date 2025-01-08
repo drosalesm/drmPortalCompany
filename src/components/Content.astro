@@ -1,0 +1,79 @@
+---
+import { projects } from '@data'; // Import your data.json
+
+
+const {name,subtitle} =projects
+
+---
+
+<section class="w-full px-4 py-12 bg-gray-100">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-4xl lg:text-5xl font-bold text-center text-gray-800">{name}</h1>    
+    <p class="text-center text-gray-600 mt-5 mb-12 text-2xl">
+      {subtitle}
+    </p> 
+
+    <!-- Slider Wrapper -->
+    <div id="slider-container" class="relative overflow-hidden h-[400px] md:h-[600px]">
+      <!-- Slides -->
+      <div id="slider" class="flex transition-transform duration-700 ease-out">
+        {projects.list.map((project) => (
+          <div class="slide min-w-full px-4 relative"> <!-- No key needed here -->
+            <div class="relative overflow-hidden">
+              <img
+                src={project.imageUrl ? `/${project.imageUrl}` : 'https://via.placeholder.com/1600x900'}
+                alt={project.title}
+                class="w-full h-full object-cover transform transition-transform duration-700 ease-out parallax-image"
+              />
+              <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-center p-4">
+                <div>
+
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <h1 class="text-4xl lg:text-5xl font-bold text-center text-white hover:underline">{project.title}</h1>
+                  </a>
+                  <p class="text-center mt-5 mb-12 text-2xl">{project.description}</p>   
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Pagination Bullets (Hidden on Mobile) -->
+      <div
+        id="pagination"
+        class="absolute bottom-6 w-full flex justify-center space-x-4 z-10 hidden md:flex"
+      ></div>
+
+      <!-- V-Shaped Arrows (Shown on Mobile) -->
+      <button
+        id="prev"
+        class="absolute top-1/2 left-8 transform -translate-y-1/2 text-white bg-black p-5 rounded-full hover:bg-gray-700 block"
+      >
+        &#10094; <!-- Left Arrow -->
+      </button>
+      <button
+        id="next"
+        class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white bg-black p-5 rounded-full hover:bg-gray-700 block"
+      >
+        &#10095; <!-- Right Arrow -->
+      </button>
+    </div>
+  </div>
+
+  <!-- Inline CSS for Mobile Adjustments -->
+  <style>
+    @media (max-width: 768px) {
+      #pagination {
+        bottom: 2rem;
+      }
+
+      #slider-container {
+        height: 300px;
+      }
+    }
+  </style>
+
+  <!-- Link to External JavaScript -->
+  <script src="/scripts/slider.js" defer></script>
+</section>
