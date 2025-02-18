@@ -5,5 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+  integrations: [tailwind()],  
+  output: 'server', // Add this line to enable server-side rendering or hybrid
+
 });

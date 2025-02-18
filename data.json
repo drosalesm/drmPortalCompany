@@ -4,7 +4,7 @@
     "subtitle": "Transformamos tus ideas en soluciones digitales personalizadas. Tu lo imaginas, nosotros lo creamos.",
     "ctaText": "Descubre más",
     "ctaLink": "/#services",
-    "imageUrl": "images/banner.webp",
+    "imageUrl": "images/banner3.webp",
     "btnText": "Contactanos"
   },
   "services": [
@@ -42,7 +42,19 @@
         "description": "Compañia de recoleccion de taxes EEUU",
         "url": "https://kellytaxpro.com/",
         "imageUrl": "images/logo.png"
-      }
+      },
+      {
+        "title": "Innova System",
+        "description": "Sistema para emision de examenes medicos",
+        "url": "",
+        "imageUrl": "images/logocemep.png"
+      } ,
+      {
+        "title": "Personal CV",
+        "description": "Curriculum web personalizado",
+        "url": "https://drm-cv-proyect.vercel.app/",
+        "imageUrl": "images/logoDR.png"
+      }       
     ]
   },
   "technologies": [
@@ -77,6 +89,34 @@
   ],"techDesc": {
     "text": "Tecnologías",
     "description": "En DRM Soluciones de Software utilizamos las mejores tecnologías para garantizar soluciones eficientes y modernas."
-  }
-  
+  },
+  "SocialNetworks": {
+    "contact": "Contáctanos",
+    "subtitleContact": "Envíanos un mensaje y nos pondremos en contacto contigo lo antes posible",
+    "name": "Redes Sociales",
+    "subtitle": "No dudes en contactarnos los siguientes canales:",    
+    "list": [
+      {
+        "name": "WhatsApp",
+        "url": "https://wa.me/50494472095",
+        "imageUrl": "https://img.icons8.com/ios-filled/24/00e676/whatsapp.png"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/david-rosales-mejia-162959156/",
+        "imageUrl": "https://img.icons8.com/ios-filled/24/0a66c2/linkedin.png"
+      }
+    ],
+    "formData": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje",
+      "btnText": "Enviar",
+      "urlService": "https://api.resend.com/emails",
+      "methodService": "POST",
+      "ContentType": "application/json",   
+      "Athorization":"Bearer re_LhLpk971_4upiuZT9KWrkN1BCwKhXYGZk",   
+      "emailTo":"drosalesm204@gmail.com"
+    }
+  }  
 }

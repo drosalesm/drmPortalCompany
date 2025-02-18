@@ -1,37 +1,83 @@
 ---
-import {hero} from "@data";
-
-
-
-const {title,subtitle,imageUrl,btnText} =hero
-
+import { hero } from "@data";
+const { title, subtitle, imageUrl, btnText } = hero;
 
 ---
-<section class="relative bg-gray-900 text-white">
-    <div class="container mx-auto px-6 lg:px-12 py-12 flex flex-col-reverse lg:flex-row items-center lg:items-start">
-      <!-- Hero Content -->
-      <div class="lg:w-1/2">
-        <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
-          Bienvenido a <span class="text-indigo-500">{title}</span>
-        </h1>
-        <p class="mt-12 text-lg lg:text-2xl text-gray-300">
-          {subtitle}
-        </p>
-        <a
-          href="#services"
-          class="mt-6 inline-block px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold text-lg rounded-md shadow-lg transition"
-        >
-          {btnText}
+
+<section class="relative bg-gray-600 text-white">
+  <div class="container mx-auto px-6 lg:px-12 py-12 flex flex-col-reverse lg:flex-row items-center lg:items-start">
+    <!-- Hero Content -->
+    <div class="lg:w-1/2">
+      <!--
+       <div id="language-buttons" class="flex md:justify-start justify-center items-center gap-4 mt-8 mb-10">
+        
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+        </svg>
+        
+        <a href="#"
+          id="en-button"
+          class="w-10 h-8 rounded-lg shadow-lg transition bg-cover opacity-50 hover:opacity-100 hover:scale-105">
+  
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-full h-full object-cover">
+            <rect width="512" height="512" fill="#eee"/>
+            <path fill="#d80027" d="M224 64h288v64H224Zm0 128h288v64H256ZM0 320h512v64H0Zm0 128h512v64H0Z"/>
+            <path fill="#0052b4" d="M0 0h256v256H0Z"/>
+            <path fill="#eee" d="m187 243l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67zm162-81l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67Zm162-82l57-41h-70l57 41l-22-67Zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67Z"/>
+          </svg>
+        </a>
+
+         <a href="#"
+          id="hn-button"
+          class="w-10 h-8 rounded-lg shadow-lg transition bg-cover opacity-50 hover:opacity-100 hover:scale-105">
+   
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-full h-full object-cover">
+            <rect width="512" height="512" fill="#338af3"/>
+            <rect width="512" height="222.6" y="144.7" fill="#eee"/>
+            <path fill="#338af3" d="m157.5 167l8.3 25.5h26.9L171 208.2l8.2 25.5l-21.7-15.7l-21.7 15.7l8.3-25.5l-21.7-15.7h26.9zm0 111.3l8.3 25.5h26.9L171 319.5l8.2 25.5l-21.7-15.7l-21.7 15.7l8.3-25.5l-21.7-15.7h26.9zm197-111.3l8.2 25.5h26.9l-21.7 15.7l8.3 25.5l-21.7-15.7l-21.7 15.7l8.2-25.5l-21.7-15.7h26.9zm0 111.3l8.2 25.5h26.9l-21.7 15.7l8.3 25.5l-21.7-15.7l-21.7 15.7l8.2-25.5l-21.7-15.7h26.9zM256 222.6l8.3 25.5H291L269.4 264l8.3 25.5l-21.7-15.8l-21.7 15.8l8.3-25.5l-21.7-15.8h26.8z"/>
+          </svg>
         </a>
       </div>
-      <!-- Hero Image -->
-      <div class="lg:w-1/2 mt-8 lg:mt-0">
-        <img
-          src={imageUrl}
-          alt="Imagen de Hero"
-          class="w-full h-full object-cover rounded-lg shadow-lg"
-        />
-      </div>
+    -->
+      <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+        Bienvenido a <span class="text-indigo-500">{title}</span>
+      </h1>
+      <p class="mt-12 text-lg lg:text-2xl text-gray-300">{subtitle}</p>
+      <a
+        href="#services"
+        class="mt-6 inline-block px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold text-lg rounded-md shadow-lg transition"
+      >
+        {btnText} 
+      </a>
     </div>
-  </section>
-  
+
+    <!-- Hero Image -->
+    <div class="lg:w-1/2 mt-8 lg:mt-0">
+      <img src={imageUrl} alt="Imagen de Hero" class="w-full h-full object-cover rounded-lg shadow-lg" />
+    </div>
+  </div>
+</section>
+
+<script type="module">
+  // Select buttons
+  const enButton = document.getElementById("en-button");
+  const hnButton = document.getElementById("hn-button");
+
+  // Add event listeners to buttons
+  enButton?.addEventListener("click", () => {
+    // Set selected language styles
+    enButton.classList.add("ring-2", "ring-blue-500", "scale-110");
+    hnButton.classList.remove("ring-2", "ring-blue-500", "scale-110");
+    enButton.classList.remove("opacity-50", "hover:opacity-100");
+    hnButton.classList.add("opacity-50", "hover:opacity-100");
+  });
+
+  hnButton?.addEventListener("click", () => {
+    // Set selected language styles
+    hnButton.classList.add("ring-2", "ring-blue-500", "scale-110");
+    enButton.classList.remove("ring-2", "ring-blue-500", "scale-110");
+    hnButton.classList.remove("opacity-50", "hover:opacity-100");
+    enButton.classList.add("opacity-50", "hover:opacity-100");
+  });
+</script>
