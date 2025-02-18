@@ -1,11 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import tailwind from '@astrojs/tailwind';
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],  
-  output: 'server', // Add this line to enable server-side rendering or hybrid
-
+  integrations: [tailwind()],
+  output: 'server',
+  adapter: node({
+    mode: 'standalone',
+  }),
 });
